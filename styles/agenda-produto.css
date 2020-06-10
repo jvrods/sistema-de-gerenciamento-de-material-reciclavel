@@ -1,0 +1,36 @@
+
+main{
+    display: flex;
+    min-height: 75vh;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main h1{
+      font-size: 50px;
+      color: #9e9e9e;
+  }
+
+  #material {
+      justify-content: flex-end;
+      margin-top: 50px;
+      color: #9e9e9e;
+  }
+
+  #calendar{
+      margin-top: 100px;
+      
+  }
+  #confirm{
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;   
+  }
+#confirm button{
+    background-color: #03a9f4;
+}

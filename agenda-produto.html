@@ -1,0 +1,147 @@
+<html>
+    <head>
+      
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      
+      <link rel="stylesheet" href="/styles/gps.css">
+      <link rel="stylesheet" href="/styles/homepage.css">
+      <link rel="stylesheet" href="/styles/agenda-produto.css">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        
+        <div class="nav-fixed" >
+            <nav>
+                <div class="nav-wrapper light-blue">
+                  <a href="homepage.html" class="brand-logo center">
+                    <img class="responsive-img" src="/img/logo.svg" id="logo-img"></a>
+                  
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i></a>
+                      <ul class="right hide-on-med-and-down">
+                        <li><a href="gps.html">Voltar</a></li>        
+                  </ul>
+                </div>
+                    <ul class="sidenav" id="mobile-demo">   
+                      <li>
+                        <a href="homepage.html">Home</a>
+                      </li>
+                    </ul>
+                  </nav>
+
+
+                
+                  <main>
+
+                    <div>
+                    <div class="input-field col s12 m6" id="material">
+                        <h1>   Tipo do material e agenda</h1>
+                        <select class="icons">
+                          <option value="" disabled selected>Escolha o material</option>
+                          <option value="" data-icon="/img/papel.svg">Papel e papelão</option>
+                          <option value="" data-icon="/img/metal.svg">metal</option>
+                          <option value="" data-icon="/img/organico.svg">organico</option>
+                          <option value="" data-icon="/img/plastico.svg">plastico</option>
+                          <option value="" data-icon="/img/battery.svg">pilhas e baterias</option>
+                        </select>
+                        <label></label>
+                      </div>
+                      <div id="calendar">
+                        <h1>   Agendamento</h1>
+                      <input type="text" placeholder="Escolha a data" class="datepicker">
+                    </div>
+                    
+                    <div id="confirm">
+                    <button data-target="modal1" class="btn modal-trigger">Confirmar</button>
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                          <h4>Confirmado!</h4>
+                          <p>Sua coleta será feita na data agendada!</p>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="homepage.html" class="modal-close waves-effect waves-green btn-flat">OK!</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+                  </main>
+                  
+                       <!---->
+                       <footer class="page-footer light-blue">
+                        <div class="container">
+                          <div class="row">
+                            
+                            <div class="col l6 s12">
+                              <h5 class="white-text">Diretrizes</h5>
+                              <p class="grey-text text-lighten-4">Nosso compromisso é fazer um mundo mais limpo, e ajudar as futuras gerações</p>
+                            </div>
+                            
+                            <div class="col l4 offset-l2 s12">
+                              <h5 class="white-text">Nossas Redes</h5> 
+                              <i><a href="#"><img class="responsive-img" src="/img/icons8-facebook-50.svg"></a></i>
+                              <i><a href="#"><img class="responsive-img" src="/img/icons8-google-plus-50.svg"></a></i>
+                              <i><a href="#"><img class="responsive-img" src="/img/icons8-twitter-50.svg"></a></i>
+                              <i><a href="#"><img class="responsive-img" src="/img/icons8-instagram-50.svg"></a></i>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="footer-copyright">
+                          <div class="container">
+                          © 2020 SGMR
+                          <a class="grey-text text-lighten-4 right" href="#!"></a>
+                          </div>
+                        </div>
+                      </footer>
+                    
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">      
+    </script>
+    
+            <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.modal');
+                var instances = M.Modal.init(elems);
+            });
+
+            </script>
+
+
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.datepicker');
+                var instances = M.Datepicker.init(elems);
+    });
+    </script>
+
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+  });
+    </script>
+
+    <script>
+           document.addEventListener('DOMContentLoaded', function() {
+              var elems = document.querySelectorAll('.sidenav');
+              var instances = M.Sidenav.init(elems);
+            });
+
+
+            
+      </script>
+    </body>
+  </html>
+        

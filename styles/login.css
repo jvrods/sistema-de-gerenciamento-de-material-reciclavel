@@ -1,0 +1,25 @@
+main{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+
+main p{
+    color: #9e9e9e;
+}
+main div.container{
+   
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main div.label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form ul h1{
+    font-size: 15px;
+}

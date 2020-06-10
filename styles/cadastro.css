@@ -1,0 +1,18 @@
+main{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+main.container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    
+}
+
+
+
+footer{
+    background-position-y: bottom;
+}
